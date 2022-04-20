@@ -1,0 +1,14 @@
+{
+    "name": "my-fun-project",
+    "author": "Evan Hahn",
+    "private": true,
+    "version": "0.2.0",
+    "dependencies": {
+        "express": "^4.17.3",
+        "mustache": "^4.2.0",
+        "nodemon": "^2.0.15"
+    },
+    "scripts": {
+        "start": "nodemon index.js"
+    }
+}
