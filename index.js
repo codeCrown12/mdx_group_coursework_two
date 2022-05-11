@@ -40,8 +40,8 @@ app.get('/lessons', function(req, res){
 //Endpoint for user's details
 app.get('/user', function(req, res){
     let users = {
-        "email": "newuser@emailserver.com",
-        "password": "selenium"
+        "email": "groupseven@gmail.com",
+        "password": "selenium23"
     }
     res.send(users)
 })
