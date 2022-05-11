@@ -33,7 +33,7 @@ app.get('/lessons', function(req, res){
             "price": 200
         }
     ]
-    res.header("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Origin", req.headers.origin)
     res.send(lessons)
 })
 
@@ -45,4 +45,6 @@ app.get('/user', function(req, res){
     }
     res.send(users)
 })
-app.listen(3000)
+app.listen(3000, () => {
+    console.log("Running on port 3000")
+})
